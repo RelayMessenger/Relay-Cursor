@@ -5,7 +5,7 @@ This generated Cursor plugin teaches the locked Relay v1 API and TypeScript SDK.
 > [!IMPORTANT]
 > This repository is generated from
 > [RelayMessenger/Relay-Skills](https://github.com/RelayMessenger/Relay-Skills) commit
-> `52fbfcb373b1d57f2b95e8956550e5bd322c70cd`. Do not edit generated files here.
+> `d64fca7a55a9e013f69a87a3c860a5645527e57b`. Do not edit generated files here.
 
 ## Local install
 
