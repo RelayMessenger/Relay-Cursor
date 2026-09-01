@@ -4,8 +4,8 @@ This generated Cursor plugin teaches the locked Relay v1 API and TypeScript SDK.
 
 > [!IMPORTANT]
 > This repository is generated from
-> [RelayMessenger/skills](https://github.com/RelayMessenger/skills) commit
-> `e00f7aa1520d177c2447f883e8634c8464093196`. Do not edit generated files here.
+> [RelayMessenger/Relay-Skills](https://github.com/RelayMessenger/Relay-Skills) commit
+> `9a655be5a2de83d8819b90dce462f23610293ccf`. Do not edit generated files here.
 
 ## Local install
 
@@ -36,6 +36,9 @@ npm install --no-package-lock
 npm test
 npm run test:live
 ```
+
+Set `RELAY_DOCS_MCP_URL=https://docs.staging.relayapp.im/mcp` when proving a
+staging release.
 
 `test:live` is the strict hosted-search freshness check and can remain blocked
 until the live docs index matches the lock.
