@@ -13,11 +13,11 @@ const provenance = JSON.parse(
 assert.match(provenance.source_commit, /^[0-9a-f]{40}$/);
 assert.equal(
   provenance.source_repository,
-  "https://github.com/RelayMessenger/Relay-Skills",
+  "https://github.com/RelayMessenger/Relay-SDK",
 );
 assert.equal(provenance.source_branch, "staging");
 
-let source = process.env.RELAY_SKILLS_SOURCE_DIR?.trim();
+let source = process.env.RELAY_SDK_SOURCE_DIR?.trim();
 let expectedBranchRef;
 if (source) {
   source = resolve(source);
@@ -40,7 +40,7 @@ if (source) {
     `source checkout lacks ${provenance.source_branch} branch provenance`,
   );
 } else {
-  source = mkdtempSync(join(tmpdir(), "relay-skills-source-"));
+  source = mkdtempSync(join(tmpdir(), "relay-sdk-source-"));
   execFileSync("git", ["init", "--quiet", source]);
   execFileSync("git", [
     "-C",

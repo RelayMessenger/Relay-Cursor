@@ -25,9 +25,12 @@ assert.match(provenance.source_commit, /^[0-9a-f]{40}$/);
 assert.equal(provenance.source_branch, "staging");
 assert.equal(
   provenance.source_repository,
-  "https://github.com/RelayMessenger/Relay-Skills",
+  "https://github.com/RelayMessenger/Relay-SDK",
 );
-assert.equal(provenance.generator, "scripts/build-distribution.py");
+assert.equal(
+  provenance.generator,
+  "tooling/skills-distributions/scripts/build-distribution.py",
+);
 
 const skillRoot =
   host === "codex" ? "plugins/relay/skills/relay" : "skills/relay";
