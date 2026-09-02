@@ -1,5 +1,12 @@
 # Relay for Cursor
 
+> [!IMPORTANT]
+> **This repository is archived and read-only.** The Relay plugin for Cursor now
+> installs directly from the root of
+> [RelayMessenger/Relay-SDK](https://github.com/RelayMessenger/Relay-SDK), which
+> is itself a Cursor marketplace — see "Agent plugin discovery" in its README.
+> Nothing here is maintained.
+
 This generated Cursor plugin teaches the locked Relay v1 API and TypeScript SDK.
 
 > [!IMPORTANT]
